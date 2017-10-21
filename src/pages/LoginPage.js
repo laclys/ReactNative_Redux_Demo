@@ -24,7 +24,7 @@ const resetAction = NavigationActions.reset({
 
   shouldComponentUpdate(nextProps, nextState) {
     // 登录完成,切成功登录
-    if (nextProps.status === '登陆成功' && nextProps.isSuccess) {
+    if (nextProps.status === '登録成功' && nextProps.isSuccess) {
       this.props.navigation.dispatch(resetAction)
       return false;
     }
@@ -35,11 +35,11 @@ const resetAction = NavigationActions.reset({
     const { login } = this.props;
     return(
       <View style={styles.container}>
-        <Text>状态: {this.props.status}
+        <Text>登録状態: {this.props.status}
         </Text>
         <TouchableOpacity onPress={()=>login()} style={{marginTop: 50}}>
           <View style={styles.loginBtn}>
-            <Text>登录
+            <Text>ログイン
             </Text>
           </View>
         </TouchableOpacity>

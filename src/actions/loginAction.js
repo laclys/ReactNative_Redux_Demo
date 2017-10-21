@@ -1,16 +1,14 @@
-'use strict';
-
 import * as types from '../constants/loginTypes'; // 导入事件类型，用来做分配给各事件
 
 // 模拟用户信息
 let user = {
-  name: 'zyy',
+  name: '張ようよう',
   age: 25,
 }
 
 // 访问登录接口 根据返回结果来划分action属于哪个type,然后返回对象,给reducer处理
 export function login() {
-  console.log('登录方法');
+  console.log('登録方法');
   return dispatch => {
     dispatch(isLogining()); // 正在执行登录请求
     // 模拟用户登录

@@ -10,10 +10,10 @@ export default class Counter extends Component {
     const { decrementFn, incrementFn, counter } = this.props;
     return (
       <View style={styles.container}>
-        <Button onClick={decrementFn} text={'减'} />
+        <Button onClick={decrementFn} text={'マイナス'} />
         <Text style={styles.label}>{counter}
         </Text>
-        <Button onClick={incrementFn} text={'加'} />
+        <Button onClick={incrementFn} text={'プラス'} />
       </View>
     )
   }

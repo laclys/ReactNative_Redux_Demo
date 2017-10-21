@@ -11,7 +11,7 @@ export default function loginIn(state=initialState, action) {
     case types.LOGIN_IN_DOING:
       return {
         ...state,
-        status: '正在登陆',
+        status: 'ログイン中',
         isSuccess: false,
         user: null,
       }
@@ -19,7 +19,7 @@ export default function loginIn(state=initialState, action) {
     case types.LOGIN_IN_DONE:
       return {
         ...state,
-        status: '登陆成功',
+        status: '登録成功',
         isSuccess: true,
         user: action.user,
       }
@@ -27,7 +27,7 @@ export default function loginIn(state=initialState, action) {
     case types.LOGIN_IN_ERROR:
       return {
         ...state,
-        status: '登录出错',
+        status: 'エラー出す',
         isSuccess: true,
         user: null,
       }
